@@ -36,7 +36,7 @@ public class TeacherController {
 		if(result.hasErrors()){
 			model.addAttribute("teachers", teacherService.findAll());
 			return "Teacher";
-//			return "redirect:/teachers";  //Por GET
+//			return "redirect:/teachers";  //Por GET 
 		}
 		this.teacherService.save(teacher);
 		return "redirect:/teachers"; //Por GET
